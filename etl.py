@@ -4,7 +4,6 @@ import psycopg2
 import pandas as pd
 from sql_queries import *
 
-
 def process_song_file(cur, filepath):
     """
     - Processes song file.
@@ -21,7 +20,6 @@ def process_song_file(cur, filepath):
     # insert artist record
     artist_data = df[["artist_id", "artist_name", "artist_location", "artist_latitude", "artist_longitude"]].values[0].tolist()
     cur.execute(artist_table_insert, artist_data)
-
 
 def process_log_file(cur, filepath):
     """
