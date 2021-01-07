@@ -1,4 +1,4 @@
-#Summary:
+# Summary:
 
 The main goal of this project is to establish an ETL pipeline that 
 
@@ -7,7 +7,7 @@ The main goal of this project is to establish an ETL pipeline that
 3) Create a data model and store data that is optimized for sing play analysis.
 
 The main parts of the project are
-##1) Schema: A star schema that contains 1 fact table and 4 dimension table.
+## 1) Schema: A star schema that contains 1 fact table and 4 dimension table.
 
     ![schema](./schema.png)
     The dimension tables include
@@ -21,14 +21,14 @@ The main parts of the project are
     a song that is in the dimenstion table the songplay table stores the details
     
  
- ##2) Queries:
+ ## 2) Queries:
     These are the SQL queries that are used to 
     
     - establish/create the above schema.
     - Insert data into the tables.
     - Query the songplay table
     
- ##3) ETL Pipeline:
+ ## 3) ETL Pipeline:
     This is the python script used to extract the song, artist data from the json file. It also reads the log data to extract user and time 
     information from the logs and populates the user and time dimenstion tables.
     
@@ -37,7 +37,7 @@ The main parts of the project are
     
     
  
- ###Example queries for singplay analysis:
+ ### Example queries for singplay analysis:
  
  1) Most played artists in descending order ( if data avaialble):
 
