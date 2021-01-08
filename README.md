@@ -1,4 +1,4 @@
-# Summary:
+# Summary :
 
 The main goal of this project is to establish an ETL pipeline that 
 
